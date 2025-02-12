@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid{
+    display: grid;
+    width: 400px;
+    grid-template-areas: "panel panel panel panel"
+                         "bdelete bclear bclear bequal"
+                            "b1 b2 b3 bpluse"
+                            "b4 b5 b6 bminus"
+                            "b7 b8 b9 bmulti"
+                            "b0 b0 b0 bdivide";
+    grid-template-rows: 1.1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2px;
+    column-gap: 2px;
+    background-color: black;
+
+}
+.panel{
+    width: 100%;
+    height: 100px;
+    grid-area: panel;
+}
+.panel p {
+    font-size:40px;
+    text-align: right;
+    color: wheat;
+    width: 100%;
+    height: inherit;
+   margin-left: -7px;
+}
+.button{
+    /* width: 75px;
+    height: 75px; */
+    color: rgb(0, 0, 0);
+    background-color: rgb(209, 206, 206);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.op{
+    background-color: rgb(255, 179, 39);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+.op:hover{
+    background-color: rgb(249, 204, 120);
+}
+.button:hover{
+    background-color: rgb(235, 235, 240);
+}
+.b1{
+    grid-area: b1;
+}
+.b2{
+    grid-area: b2;
+}.b3{
+    grid-area: b3;
+}.bpluse{
+    grid-area: bpluse;
+}.b4{
+    grid-area: b4;
+}.b5{
+    grid-area: b5;
+}.b6{
+    grid-area: b6;
+}.bminus{
+    grid-area: bminus;
+}.b7{
+    grid-area: b7;
+}.b8{
+    grid-area: b8;
+}.b9{
+    grid-area: b9;
+}.bmulti{
+    grid-area: bmulti;
+}
+.b0{
+    grid-area: b0;
+}
+.bdivide{
+    grid-area: bdivide;
+}
+.bequal{
+    grid-area: bequal;
+}
+.bclear{
+    grid-area: bclear;
+}
+.bdelete{
+    grid-area: bdelete;
+}
